@@ -23,4 +23,4 @@ vanilla-tilt
 
 For dev purposes nodemon was also used.
 
-Lastly, the code found inside slider.css and slider.js wasn't written by me, however it can be used under an MIT license I could've easily incorporated it into the main css and js files (style.css and app.js respectively) however I want to be transparent in what code I actually wrote. That's why it is outside.
+Lastly, the code found inside slider.css and slider.js wasn't written by me, however it can be used under an MIT license I could've easily incorporated it into the main css and js files (style.css and app.js respectively) however I want to be transparent in what code I actually wrote. 
