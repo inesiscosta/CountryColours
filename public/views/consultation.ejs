@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF=8" />
+    <meta http-equiv="X-UA-Compatible" coontent="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Colours</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="small-sub-header">
+        <nav>
+            <a href="/"><img src="/assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/services">SERVICES</a></li>
+                    <li><a href="/work">OUR WORK</a></li>
+                    <li><a href="/users/dashboard">DASHBOARD</a></li>
+                </ul>
+            </div>
+        </nav>
+    <h1>Request Consultation</h1>
+    </section>
+    <section class="consultation">
+        <div class="consultation-col">
+            <p>Please fill out the the following form to request a consultation with one of our experts.</p>
+            <div class="consultation-form">
+                <form action="/users/consultation" method="POST">
+                    <label for="address">House Address</label>
+                    <input type="text" id="adress" name="address" placeholder= "Don't forget to include your house number." required>
+                    <br>
+                    <label for="date">Requested Date</label>
+                    <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" required>
+                    <button type="submit">Submit</button><br>
+                    <% if (message) { %>
+                        <p class="message"> <%=message %>
+                        <% } %>
+                </form>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
+

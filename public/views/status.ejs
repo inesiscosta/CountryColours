@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Country Colours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<section class="small-sub-header">
+		<nav>
+            <a href="/"><img src="/assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/services">SERVICES</a></li>
+                    <li><a href="/work">OUR WORK</a></li>
+                    <li><a href="/users/dashboard">DASHBOARD</a></li>
+                </ul>
+            </div>
+        </nav>
+		<h1>Job Status Table</h1>
+		<p>Please find information regarding the job below.</p>
+		<section class="center-table">
+		<table class="status-table">
+			<thead>
+				<tr>
+					<th>Job ID</th>
+					<th>Address</th>
+					<th>Consultation Status</th>
+					<th>Consultation Date</th>
+					<th>Price Estimate</th>
+					<th>Completion Status</th>
+					<th>Completion Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% data.forEach(function(job) { %>
+					<% if (job.id_login === user.id_login) { %>
+					<tr>
+						<td><%= job.id_job %></td>
+						<td><%= job.address %></td>
+						<td><%= job.consultation_status %></td>
+						<td><%= job.consultation_date %></td>
+						<td><%= job.price_estimate %></td>
+						<td><%= job.completion_status %></td>
+						<td><%= job.completion_date %></td>
+					</tr>
+					<% } %>
+				<% }); %>
+			</tbody>
+		</table>
+		</section>
+	</section>
+</body>
+</html>

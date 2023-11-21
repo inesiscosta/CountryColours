@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" coontent="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Colours</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+          <a href="/"><img src="/assets/images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+              <ul>
+                  <li><a href="/">HOME</a></li>
+                  <li><a href="/about">ABOUT</a></li>
+                  <li><a href="/services">SERVICES</a></li>
+                  <li><a href="/work">OUR WORK</a></li>
+                  <li><a href="/users/logout">LOGOUT</a></li>
+              </ul>
+          </div>
+      </nav>
+      <div class="settings-icon">
+        <a href="/users/profile"><i class='bx bxs-cog' id="cog-icon bx"></i></a>
+      </div>
+      <div class="greeting">
+        <h1>Hello <%= user%>,</h1>
+        <p>do you want to...</p>
+        <div class="row">
+          <div class="dash-col">
+            <a href="/users/consultation">
+              <img src="/assets/images/consultation.png">
+              <h3>Request Consultation</h3>
+            </a>
+          </div>
+          <div class="dash-col">
+            <a href="/users/status">
+              <img src="/assets/images/status.png">
+              <h3>Check Job Status</h3>
+            </a>
+          </div>
+          <div class="dash-col">
+            <a href="/users/contact">
+              <img src="/assets/images/representative.png">
+              <h3>Chat with a Representative</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

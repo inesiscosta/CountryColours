@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF=8" />
+    <meta http-equiv="X-UA-Compatible" coontent="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Colours</title>
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+            <a href="/"><img src="/assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/services">SERVICES</a></li>
+                    <li><a href="/work">OUR WORK</a></li>
+                    <li><a href="/users/login">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+		<h1>OUR WORK</h1>
+  </section>
+  <div id="image-comparison-slider">
+    <img src="/assets/images/before.jpg" alt="before">
+    <div class="img-wrapper">
+      <img src="/assets/images/after.jpg" alt="after">
+    </div>
+    <span class="label label-before">Before</span>
+    <span class="label label-after">After</span>
+    <div class="handle">
+      <div class="handle-line"></div>
+      <div class="handle-circle">
+        <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="handle-line"></div>
+    </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="/js/slider.js"></script>
+<script>
+    VanillaTilt.init(document.querySelector("#image-comparison-slider"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5,
+    });
+</script>           
+</body>
+</html>
